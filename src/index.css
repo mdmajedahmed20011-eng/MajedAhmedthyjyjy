@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mango-green: #0D3B1E;
+  --color-leaf-green: #1E5B2E;
+  --color-mango-gold: #F6B73C;
+  --color-warm-orange: #FF9F1C;
+  --color-cream-white: #F8F4EA;
+  --color-soft-beige: #EFE7D6;
+  
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-bengali: 'Noto Serif Bengali', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    @apply bg-cream-white text-mango-green font-sans overflow-x-hidden antialiased;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(246, 183, 60, 0.3);
+  }
+  .box-glow {
+    box-shadow: 0 0 30px rgba(30, 91, 46, 0.15);
+  }
+}
